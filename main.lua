@@ -26,6 +26,7 @@ getgenv().GAG2Config = {
         ["Mango"] = 9999,
         ["Corn"] = 9999,
         ["Coconut"] = 9999,
+		["Bamboo"] = 9999,
     },
     BUY_AUCTION = { 
 	["Sun Bloom"] = {99000000,100},
