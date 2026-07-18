@@ -52,7 +52,7 @@ getgenv().GAG2Config = {
     -- Misc Config
     COLLECT_PLANT_IF_MUTATED = {},  -- Only collect fruit when have ANY mutation
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
-    FOCUS_COLLECT_DROPPED_SEED = false,  -- set true if public server (instant collect), false for slightly slower collect
+    FOCUS_COLLECT_DROPPED_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
     MAX_PET_EQUIP = 6,
     EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
    
