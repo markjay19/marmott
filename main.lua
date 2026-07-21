@@ -11,8 +11,6 @@ getgenv().GAG2Config = {
         ["Raccoon"] = 99,
         ["IceSerpent"] = 99,
         ["Deer"] = 5,
-		["Big Raccoon"] = 99,
-		["Big Firefly"] = 99,
     },
 	
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
@@ -101,8 +99,6 @@ getgenv().GAG2Config = {
         ["Hypno Bloom"] = "All",
 		["IceSerpent"] = "All",	
 		["Raccoon"] = "All",
-		["Big Firefly"] = "All",
-		["Big Raccoon"] = "All",
 		["Sun Bloom"] = "All"},
 	
 },  
@@ -120,5 +116,6 @@ getgenv().GAG2Config = {
     SHOW_WEBHOOK_USERNAME = false,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = false,  -- Private Webhook
 }
+print("Config loaded successfully")
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
