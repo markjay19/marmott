@@ -112,8 +112,8 @@ getgenv().GAG2Config = {
 		["IceSerpent"] = "All",	
 		["BlackDragon"] = "All",
 		["Raccoon"] = "All",
-		["Big Firefly"] = "All"},
-		["Big Raccoon"] = "All"},
+		["Big Firefly"] = "All",
+		["Big Raccoon"] = "All",
 		["Sun Bloom"] = "All"},
 	
 },  
