@@ -15,10 +15,6 @@ getgenv().GAG2Config = {
 		["Big Firefly"] = 99,
     },
 	
-    -- Pet Config
-    MAX_PET_EQUIP = 6,
-    BUY_PET = {  -- ["Pet Name"] = Buy Until Amount       
-    },
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
         {"Unicorn", 6, 1}, 
         {"GoldenDragonfly", 6, 2},
