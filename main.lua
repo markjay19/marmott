@@ -118,7 +118,7 @@ getgenv().GAG2Config = {
     DISCORD_ID = "",
     WEBHOOK_NOTE = "",  -- Private Webhook
     SHOW_PUBLIC_DISCORD_ID = false,
-    SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
+    SHOW_WEBHOOK_USERNAME = false,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = false,  -- Private Webhook
 }
 
