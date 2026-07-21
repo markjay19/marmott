@@ -1,21 +1,38 @@
 script_key="lsZyDKesCUmUVimTsPWGsTEEvFeabEhH";
 getgenv().GAG2Config = {
-    FPS_CAP = 10,  -- MUST USE 5+ FPS FOR TWEENING
+    FPS_CAP = 8,  -- MUST USE 5+ FPS FOR TWEENING
     AUTO_UPDATE_RESTART = true,
     COLLECT_FRUIT_DELAY = 20,
 
+	 MAX_PET_EQUIP = 6,
+    BUY_PET = {  -- ["Pet Name"] = Buy Until Amount
+        ["Firefly"] = 99,
+        ["BlackDragon"] = 99,
+        ["Raccoon"] = 99,
+        ["IceSerpent"] = 99,
+        ["Deer"] = 5,
+		["Big Raccoon"] = 99,
+		["Big Firefly"] = 99,
+    },
+	
     -- Pet Config
     MAX_PET_EQUIP = 6,
-    BUY_PET = {  -- ["Pet Name"] = Buy Until Amount
-       
+    BUY_PET = {  -- ["Pet Name"] = Buy Until Amount       
     },
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
         {"Unicorn", 6, 1}, 
         {"GoldenDragonfly", 6, 2},
-        {"Robin", 6, 3},
+        {"Firefly", 6, 3},
         {"Deer", 6, 4},
     },
-   
+
+	-- Plant Config
+    PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount      
+        ["Venom Spitter"] = 10,
+        ["Moon Bloom"] = 10,
+        ["Hypno Bloom"] = 10,
+    },
+
     -- Buying Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
         ["Sun Bloom"] = 99999, 
@@ -26,6 +43,8 @@ getgenv().GAG2Config = {
         ["Corn"] = 9999,
         ["Acorn"] = 9999,
 		["Bamboo"] = 9999,
+		["Mango"] = 9999,
+		["Venom Spitter"] = 10,
     },
     BUY_AUCTION = { 
 	["Sun Bloom"] = {99000000,100},
@@ -36,44 +55,67 @@ getgenv().GAG2Config = {
     BUY_CRATE = {},  -- ["Crate Name"] = Buy Until Amount
     BUY_GEAR_MIN_SHECKLE = 100000000, 
     BUY_GEAR = { 
-	["Super Watering Can"] = 9999,
+		["Super Watering Can"] = 9999,
     	["Legendary Sprinkler"] = 9999,
+		["Watering Can"] = 99999,
+		["Common Sprinkler"] = 99999,
+		["Uncommon Sprinkler"] = 99999,
     	["Super Sprinkler"] = 9999,
-	["Trowel"] = 9999,
+		["Trowel"] = 9999,
+		["Rare Sprinkler"] - 99999,
     },  
     
     -- Sell Config
-    SELL_FRUIT_MULTIPLIER = {}, 
+     SELL_FRUIT_MULTIPLIER = {
+		["Venom Spitter"] = 1,
+        ["Moon bloom"] = 1,
+        ["Hypno Bloom"] = 1.5,
+    },
     SELL_ALL_DAILY_DEAL = 100000000,  -- Min "daily sell all" value
-    SELL_ALL_DELAY = 60,  -- Seconds  
+    SELL_ALL_DELAY = 120,  -- Seconds  
 
+	-- Consumable Config
+    USE_SPRINKLER = {"Rare Sprinkler","Common Sprinkler","Uncommon Sprinkler","Legendary Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
+    USE_WATERING_CAN = {"Watering Can"},  -- "Watering Can Name"
+    USE_WATERING_CAN_DELAY = 60,  -- Seconds
 
     -- Misc Config
-    COLLECT_PLANT_IF_MUTATED = {},  -- Only collect fruit when have ANY mutation
+     -- Other Config
+    COLLECT_PLANT_IF_MUTATED = {
+        "Moon Bloom",
+        "Hypno Bloom",
+    },  -- Only collect fruit when have ANY mutation
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
     FOCUS_COLLECT_DROPPED_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
     MAX_PET_EQUIP = 6,
-    EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
+    EXPAND_PLOT = 5,  -- 0 = No expand, 3 = expand plot 3 times
    
     AUTO_MAIL = { 
 	["nekowin2000"] = {
-        ["Moon Bloom"] = "All",
+    ["Moon Bloom"] = "All",
 	["Legendary Sprinkler"] = 20,
 	["Super Watering Can"] = "All",
 	["Trowel"] = 100,
-        ["Super Sprinkler"] = "All"},
-    	["neko101950"] = {
-        ["Mega"] = "All",
-        ["Rainbow"] = 20,
+    ["Super Sprinkler"] = "All"},
+    		["neko101950"] = {
+      	["Mega"] = "All",
+       	["Rainbow"] = 20,
         ["Gold"] = 20,
-	["Star Fruit"] = "All",
+		["Star Fruit"] = "All",
 		["Bamboo"] = 500,	
 		["Acorn"] = "All",
-		["Corn"] = 500,
+		["Corn"] = 50,
 		["Mango"] = 10,
-	["Dragon's Breath"] = "All",
+		["BlackDragon"] = "All",	
+		["Dragon's Breath"] = "All",
         ["Hypno Bloom"] = "All",
-	["Sun Bloom"] = "All"},
+		["IceSerpent"] = "All",	
+		["BlackDragon"] = "All",
+		["Raccoon"] = "All",
+		["Big Firefly"] = "All"},
+		["Big Raccoon"] = "All"},
+		["Sun Bloom"] = "All"},
+	
 },  
 
     AUTO_MAIL_DELAY = 300,  -- Seconds
@@ -82,11 +124,11 @@ getgenv().GAG2Config = {
     -- Discord
     WEBHOOK_PET_NAME = {},
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
-    WEBHOOK_URL = "",
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1413881798437503068/waeWgvJPAaY3cf5G_AyHEUXAB5QPQv4q-9uX6mdDL1GEJY7QuR2m7J7nzfWLKWEU_NmO",
     DISCORD_ID = "",
     WEBHOOK_NOTE = "",  -- Private Webhook
     SHOW_PUBLIC_DISCORD_ID = false,
-    SHOW_WEBHOOK_USERNAME = false,  -- Private Webhook
+    SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = false,  -- Private Webhook
 }
 
