@@ -1,6 +1,6 @@
 script_key="lsZyDKesCUmUVimTsPWGsTEEvFeabEhH";
 getgenv().GAG2Config = {
-    FPS_CAP = 8,  -- MUST USE 5+ FPS FOR TWEENING
+    FPS_CAP = 6,  -- MUST USE 5+ FPS FOR TWEENING
     AUTO_UPDATE_RESTART = true,
     COLLECT_FRUIT_DELAY = 20,
 
