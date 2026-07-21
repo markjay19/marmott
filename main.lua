@@ -53,7 +53,7 @@ getgenv().GAG2Config = {
     BUY_GEAR = { 
 		["Super Watering Can"] = 9999,
     	["Legendary Sprinkler"] = 9999,
-		["Watering Can"] = 99999,
+		["Common Watering Can"] = 99999,
 		["Common Sprinkler"] = 99999,
 		["Uncommon Sprinkler"] = 99999,
     	["Super Sprinkler"] = 9999,
@@ -72,13 +72,10 @@ getgenv().GAG2Config = {
 
 	-- Consumable Config
     USE_SPRINKLER = {"Legendary Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
-    USE_WATERING_CAN = {"Watering Can"},  -- "Watering Can Name"
+    USE_WATERING_CAN = {"Common Watering Can"},  -- "Watering Can Name"
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
 	
-    COLLECT_PLANT_IF_MUTATED = {
-        "Moon Bloom",
-        "Hypno Bloom", 
-	},  
+    COLLECT_PLANT_IF_MUTATED = {"Moon Bloom", "Hypno Bloom"},  
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
     FOCUS_COLLECT_DROPPED_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
     EXPAND_PLOT = 5,  -- 0 = No expand, 3 = expand plot 3 times
