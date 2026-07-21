@@ -58,13 +58,13 @@ getgenv().GAG2Config = {
 		["Uncommon Sprinkler"] = 99999,
     	["Super Sprinkler"] = 9999,
 		["Trowel"] = 9999,
-		["Rare Sprinkler"] - 99999,
+		["Rare Sprinkler"] = 99999,
     },  
     
     -- Sell Config
      SELL_FRUIT_MULTIPLIER = {
 		["Venom Spitter"] = 1,
-        ["Moon bloom"] = 1,
+        ["Moon Bloom"] = 1,
         ["Hypno Bloom"] = 1.5,
     },
     SELL_ALL_DAILY_DEAL = 100000000,  -- Min "daily sell all" value
@@ -100,7 +100,6 @@ getgenv().GAG2Config = {
 		["Dragon's Breath"] = "All",
         ["Hypno Bloom"] = "All",
 		["IceSerpent"] = "All",	
-		["BlackDragon"] = "All",
 		["Raccoon"] = "All",
 		["Big Firefly"] = "All",
 		["Big Raccoon"] = "All",
