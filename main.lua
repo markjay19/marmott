@@ -75,7 +75,7 @@ getgenv().GAG2Config = {
     SELL_ALL_DELAY = 120,  -- Seconds  
 
 	-- Consumable Config
-    USE_SPRINKLER = {"Rare Sprinkler","Common Sprinkler","Uncommon Sprinkler","Legendary Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
+    USE_SPRINKLER = {"Legendary Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
     USE_WATERING_CAN = {"Watering Can"},  -- "Watering Can Name"
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
 
