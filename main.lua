@@ -45,7 +45,7 @@ getgenv().GAG2Config = {
     BUY_AUCTION = { 
 	["Sun Bloom"] = {99000000,100},
 	["Dragon's Breath"] = {99000000,100},
-	["Hypno Bloom"] = {99000000,100}
+	["Hypno Bloom"] = {99000000,100},
 }, 
 
     BUY_CRATE = {},  -- ["Crate Name"] = Buy Until Amount
@@ -74,9 +74,7 @@ getgenv().GAG2Config = {
     USE_SPRINKLER = {"Legendary Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
     USE_WATERING_CAN = {"Watering Can"},  -- "Watering Can Name"
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
-
-    -- Misc Config
-     -- Other Config
+	
     COLLECT_PLANT_IF_MUTATED = {
         "Moon Bloom",
         "Hypno Bloom",
