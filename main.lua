@@ -77,11 +77,10 @@ getgenv().GAG2Config = {
 	
     COLLECT_PLANT_IF_MUTATED = {
         "Moon Bloom",
-        "Hypno Bloom",
-    },  -- Only collect fruit when have ANY mutation
+        "Hypno Bloom", 
+	},  
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
     FOCUS_COLLECT_DROPPED_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
-    MAX_PET_EQUIP = 6,
     EXPAND_PLOT = 5,  -- 0 = No expand, 3 = expand plot 3 times
    
     AUTO_MAIL = { 
