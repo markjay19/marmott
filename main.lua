@@ -5,9 +5,6 @@ getgenv().GAG2Config = {
     COLLECT_FRUIT_DELAY = 20,
 
 	 MAX_PET_EQUIP = 6,
-    BUY_PET = {  -- ["Pet Name"] = Buy Until Amount
-        ["Deer"] = 5,
-    },
 	
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
         {"Unicorn", 6, 1}, 
