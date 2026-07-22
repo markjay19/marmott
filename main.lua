@@ -6,10 +6,6 @@ getgenv().GAG2Config = {
 
 	 MAX_PET_EQUIP = 6,
     BUY_PET = {  -- ["Pet Name"] = Buy Until Amount
-        ["Firefly"] = 99,
-        ["BlackDragon"] = 99,
-        ["Raccoon"] = 99,
-        ["IceSerpent"] = 99,
         ["Deer"] = 5,
     },
 	
@@ -22,7 +18,7 @@ getgenv().GAG2Config = {
 
 	-- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount      
-        ["Venom Spitter"] = 10,
+        ["Venom Spitter"] = 200,
         ["Moon Bloom"] = 10,
         ["Hypno Bloom"] = 10,
     },
