@@ -16,8 +16,11 @@ getgenv().GAG2Config = {
 	-- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount      
         ["Venom Spitter"] = 200,
+		["Sunflower"] = 50,
         ["Moon Bloom"] = 10,
         ["Hypno Bloom"] = 10,
+		["Bamboo"] = 20,
+		["Mushroom"] = 20,
     },
 
     -- Buying Config
@@ -32,6 +35,7 @@ getgenv().GAG2Config = {
 		["Bamboo"] = 9999,
 		["Mango"] = 9999,
 		["Carrot"] = 999999,
+		["Mushroom"] = 9999,
 		["Venom Spitter"] = 10,
 		["Pineapple"] = 99999,
 		["Strawberry"] = 99999,
@@ -75,7 +79,7 @@ getgenv().GAG2Config = {
     USE_WATERING_CAN = {"Common Watering Can"},  -- "Watering Can Name"
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
 	
-    COLLECT_PLANT_IF_MUTATED = {"Moon Bloom", "Hypno Bloom"},  
+    COLLECT_PLANT_IF_MUTATED = {"Moon Bloom", "Hypno Bloom","Bamboo","Mushroom","Sunflower"},  
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
     FOCUS_COLLECT_DROPPED_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
     EXPAND_PLOT = 5,  -- 0 = No expand, 3 = expand plot 3 times
