@@ -44,6 +44,7 @@ getgenv().GAG2Config = {
 		["Cherry"] = 99999,
 		["Dragon Fruit"] = 99999,
 		["Sunflower"] = 99999,
+		["Briar Rose"] = 9999,
     },
     BUY_AUCTION = { 
 	["Sun Bloom"] = {99000000,100},
@@ -62,6 +63,7 @@ getgenv().GAG2Config = {
     	["Super Sprinkler"] = 9999,
 		["Trowel"] = 9999,
 		["Rare Sprinkler"] = 99999,
+		["HARP"] = 99999,
     },  
     
     -- Sell Config
@@ -100,6 +102,8 @@ getgenv().GAG2Config = {
         ["Hypno Bloom"] = "All",
 		["IceSerpent"] = "All",	
 		["Raccoon"] = "All",
+		["HARP"] = "All", 
+		["Briar Rose"] = "All", 
 		["Sun Bloom"] = "All"},
 	
 },  
