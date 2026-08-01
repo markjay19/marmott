@@ -108,7 +108,7 @@ getgenv().GAG2Config = {
 	
 },  
 
-    AUTO_MAIL_DELAY = 300,  -- Seconds
+    AUTO_MAIL_DELAY = 18000,  -- Seconds
     COLLECT_MAIL = true,
 
     -- Discord
